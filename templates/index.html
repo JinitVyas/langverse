@@ -186,14 +186,15 @@
                 </div>
                 <div class="form-floating mt-3 d-flex">
                     <input type="number" id="numOfLines" name="numOfLines">
-                    <label for="numOfLines">Number of lines for summary</label>
+                    {% comment %} <label for="numOfLines">Number of lines for summary</label> {% endcomment %}
                 </div>
+                <span>Number of lines for summary</span>
                 
                 <div class="form-floating w-100 d-flex justify-content-center mt-3">
                     <input type="submit" name="go" value="GO!" id="go" class="btn btn-success">
                 </div>
                 
-                <div class="form-floating mt-3">
+                <div class="form-floating mt-3 ">
                     <textarea class="form-control border-5" placeholder="Leave a comment here" id="outputText"
                     style="height: 150px"></textarea>
                     <label for="floatingTextarea2">Generated Summary:</label>
